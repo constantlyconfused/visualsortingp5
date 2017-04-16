@@ -37,7 +37,7 @@ function draw() {
 
 function update(){ //redraws bars
 	for (var i=0; i<100; i++){
-		fill(155-i,255-i,i);
+		fill(155-bars[i],255-bars[i],bars[i]);
 		if (i==drawj) fill(255,0,0);
 		rect(i*10, height, 10, -bars[i]);
 	}
